@@ -11,6 +11,7 @@ on:
 
 jobs:
   build:
+
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -29,7 +30,6 @@ jobs:
     - name: 'Report Coverage'
       uses:  davelosert/vitest-coverage-report-action@v2
       if: always()
-
   package-and-publish:
     name: 🐳Package & Publish
     runs-on: ubuntu-latest
