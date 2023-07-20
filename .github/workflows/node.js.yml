@@ -30,3 +30,4 @@ jobs:
     - name: 'Report Coverage'
       uses:  davelosert/vitest-coverage-report-action@v2
       if: always()
+
